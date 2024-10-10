@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <main>
+        <div class="product-box">
+            <div class="product-nav">
+                <ul class="desktop">
+                    <li onclick="blackhoodie()" id="img-box1"></li>
+                    <li onclick= "greyhoodie()" id="img-box2"></li>
+                    <li onclick="bluehoodie()" id="img-box3"></li>
+                    <li onclick="camohoodie()" id="img-box4"></li>
+                </ul>
+                <section id="product-image">
+    
+                </section>
+                <ul class="mobile">
+                    <li onclick="blackhoodie()" id="img-box1"></li>
+                    <li onclick= "greyhoodie()" id="img-box2"></li>
+                    <li onclick="bluehoodie()" id="img-box3"></li>
+                    <li onclick="camohoodie()" id="img-box4"></li>
+                </ul>
+            </div>
+            <div class="product-info">
+                <div class="title">
+                    <p>Jolt/Jakets</p>
+                    <h1>Boa Fleece Jackets</h1>
+                    <h2>$122.00 <del>$129.00</del> <button>5% Disc</button></h2>
+                    <ul>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><span>(4.9) </span> 1.2K Reviews </li>
+                    </ul>
+                </div>
+                <div class="desc">
+                    <h1>Descriptions</h1>
+                    <p>
+                        Introducing the Boa Fleece Winter Jacket, designed to keep you warm and comfortable during the coldest winter days. 
+                        Crafted from high-quality fleece material, this jacket offers superior insulation and softness, making it the perfect 
+                        choice for outdoor activities or everyday wear. The jacket features a stylish and functional design, with a 
+                        <span id="dots">...</span><span id="more">fleece-lined hood, durable zippers, and spacious pockets. Stay warm and look great this winter with our Boa Fleece Winter Jacket.</span>
+                        <button onclick="readMore()" id="morebtn">more</button>
+                    </p>
+                </div>
+                <div class="info">
+                    <h1>Available Colors</h1>
+                    <ul class="colors">
+                        <li><button onclick="blackhoodie()"></button></li>
+                        <li><button onclick="greyhoodie()" id="grey"></button></li>
+                        <li><button onclick="bluehoodie()" id="blue"></button></li>
+                    </ul>
+
+                    <h1>Size</h1>
+                    <ul class="size">
+                        <li>S</li>
+                        <li id="selected">M</li>
+                        <li>L</li>
+                        <li id="xl">XL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
